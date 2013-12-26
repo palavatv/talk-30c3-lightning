@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>palava: FOSS P2P-Videoconferences on the web</title>
+    <title>palava: FOSS P2P-Video Conferences on the Web</title>
 
     <meta name="description" content="palava: FOSS P2P-Videoconferences on the web">
     <meta name="author" content="Marius Melzer">
@@ -48,8 +48,8 @@
       <div class="slides">
         <section>
           <section>
-            <h1>palava
-              <h2>Encrypted P2P-Videoconferences<br> on the web</h2>  
+            <h1>palava</h1>
+              <h2>Encrypted P2P<br/>Video Conferences on the Web</h2>  
             <br>
             <h3>Marius Melzer</h3>
           </section>
@@ -58,20 +58,22 @@
         <section>
           <section>
             <h2>WebRTC</h2>
-            <h4>new web standard (currently in firefox & chrome)</h4>
-            <h4>allows p2p-connections between browsers ...</h4>
-            <h4>... and video/audio streams on top</h4>
+            <p>Upcoming web standard</p>
+            <p>Enables p2p connections between browsers ...</p>
+            <p>... and video/audio streams on top</p>
           </section>
               
           <section>
+            <h3>JavaScript API</h3>
             <img src="images/webrtc-components.png" />
           </section>
 
           <section>
+            <h3>User Media Access</h3>
             <pre><code data-trim contenteditable>
-<video id="gum-video" autoplay="autoplay">
+&lt;video id="gum-video" autoplay="autoplay"&gt;
 
-<script>
+&lt;script&gt;
   navigator.webkitGetUserMedia(
     {video: true, audio: false},
     function(stream) {
@@ -79,18 +81,18 @@
           webkitURL.createObjectURL(stream);
     }
   );
-</script>
-            </code></pre>
+&lt;/script&gt;
+</code></pre>
           </section>
         </section>
 
         <section>
           <section>
             <h2>P2P connection requirements</h2>
-            <h4>Initialisation over signaling server</h4>
-            <h4>Exchange of streaming properties over SDP</h4>
-            <h4>NAT traversal via ICE (STUN server)</h4>
-            <h4>Interop problems & workarounds</h4>
+            <p>Initialization over signaling server</p>
+            <p>Exchange of streaming properties over SDP</p>
+            <p>NAT traversal via ICE (STUN server)</p>
+            <p>Interop problems & workarounds</p>
           </section>
         </section>
 
@@ -120,19 +122,18 @@
         <section>
           <section>
             <h2> https://palava.tv</h2>
-            <h4> one running palava instance</h4>
-            <h4> video conferences with as many people as your bandwidth allows</h4>
-            <h4> no registration or login required</h4>
-            <h4> provides open stun + signaling</h4>
+            <p>A running palava instance</p>
+            <p>Conferences with as many people as your bandwidth allows</p>
+            <p>No registration or login required</p>
+            <p>Provides open stun + signaling</p>
           </section>
         </section>
         
         <section>
           <section>
-            <h2> who is palava?</h2>
-            <h4> 4 founders: Jan Lelis, Marius Melzer, Stephan Thamm, Kilian Ulbrich</h4>
-            <h4> non-profit organisation</h4>
-            <h4> 13 members</h4>
+            <h2>Who is palava?</h2>
+            <p>Non-profit organisation</p>
+            <p>13 members</p>
           </section>
 
           <section>
@@ -182,7 +183,7 @@
           <section>
             <h3>One more thing</h3>
             <h2><a href="http://signaling.io">signaling.io</a></h2>
-            <p>Jan and I are working on a signaling hoster using the palava protocol</p>
+            <p>Jan and me are working on a hosted<br/>signaling service using the palava protocol</p>
           </section>
         </section>
       </div>
